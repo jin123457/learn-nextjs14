@@ -15,10 +15,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/about-us/page.js"
     ],
-    "/page": [
+    "/(home)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/(home)/page.js"
     ]
   }
 }
