@@ -9,7 +9,6 @@ export default async function MovieDetail({
 }) {
   return (
     <div>
-      <h3>Movie detail page</h3>
       <Suspense fallback={`Loading movie info`}>
         {/* @ts-expect-error Async Server Component */}
         <MovieInfo id={id} />
