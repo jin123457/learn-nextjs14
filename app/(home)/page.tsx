@@ -1,13 +1,14 @@
 import { Metadata } from "next";
 import styles from "../../styles/home.module.css";
 import Movie from "../../components/movie";
+import { API_URL } from "../constans";
 
 export const metadata: Metadata = {
   title: "Home",
 };
 
 async function getMovies() {
-  const response = await fetch(process.env.API_URL);
+  const response = await fetch(API_URL);
   const json = await response.json();
   return json;
 }
